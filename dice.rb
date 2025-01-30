@@ -51,8 +51,8 @@ end
 
 # 1 20-sided die
 get("/dice/1/20") do
-  die = rand(1..20)
-  @outcome = "You got a #{die}."
+  @die = rand(1..20)
+  @outcome = "You got a #{@die}."
 
     erb(:one_twenty)
 end
